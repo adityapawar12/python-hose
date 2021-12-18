@@ -7,23 +7,19 @@ class Line():
 
 
     def distance(self):
-        x1, x2 = self.coor1
-        y1, y2 = self.coor2
-        x = (x1 - y1) ** 2
-        y = (x2 - y2) ** 2
-        xy = (x + y) ** 1/2
-        print(xy)
+        x1, y1 = self.coor1
+        x2, y2 = self.coor2
+
+        return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
     def slope(self):
-        x1, x2 = self.coor1
-        y1, y2 = self.coor2
-        y = x2 - y2
-        x = x1 - y1
-        yx = y/x
-        print(yx)
+        x1, y1 = self.coor1
+        x2, y2 = self.coor2
+
+        return (y2 - y1) / (x2 - x1)
 
 
-myline = Line((4, 3), (9, 4.5))
+myline = Line((3, 2), (8, 10))
 
-myline.distance()
-myline.slope()
+print(myline.distance())
+print(myline.slope())
