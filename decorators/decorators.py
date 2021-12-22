@@ -1,0 +1,3 @@
+"""
+    THE DECORATOR PRACTISE.
+"""
