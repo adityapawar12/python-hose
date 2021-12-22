@@ -151,7 +151,7 @@ def dealer_busts(player, dealer, chips):
     chips.win_bet()
 
 
-def dealer(player, dealer, chips):
+def dealer_wins(player, dealer, chips):
     print('DEALER WINS')
     chips.lose_bet()
 
@@ -204,7 +204,7 @@ while True:
     # If player hasn't busted play dealers hand until dealer reaches 17
     if player_hand.value < 21:
 
-        while dealer_hand_value < player_hand_value:
+        while dealer_hand.value < player_hand.value:
             hit(deck, dealer_hand)
 
         # show all cards
@@ -224,7 +224,7 @@ while True:
     print(f'\n player total chips are at {player_chips.total}')
 
     # ask to play again
-    new_game = input("would you like to play another hand? y/n")
+    new_game = input("would you like to play another hand? y/n ")
 
     if new_game[0].lower() == 'y':
         playing = True
