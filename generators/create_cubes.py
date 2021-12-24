@@ -1,0 +1,3 @@
+"""
+    PYTHON GENERATORS PRACTICE.
+"""
