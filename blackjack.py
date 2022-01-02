@@ -9,6 +9,5 @@ def blackjack(a,b,c):
         return 'BUST!'
         
         
-        
 result = blackjack(6,8,11)
 print(result)
